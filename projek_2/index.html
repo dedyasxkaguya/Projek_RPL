@@ -53,5 +53,15 @@
             <td>XSL Formating Objects</td>
           </tr>
     </table>
+        <footer
+        style="position: fixed;bottom: 0;padding: 1rem;left: 0;width: 100dvw;background-color: #0d6efd;color: #fff;">
+        @Copyright Dedyas <span id="year"></span>
+    </footer>
 </body>
+<script>
+    function getYear() {
+        return new Date().getFullYear()
+    }
+    document.getElementById("year").innerHTML = getYear()
+</script>
 </html>

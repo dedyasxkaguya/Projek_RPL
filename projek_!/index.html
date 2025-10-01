@@ -7,7 +7,7 @@
     <title>Document</title>
 </head>
 
-<body style="padding: 2rem;">   
+<body style="padding: 2rem;overflow-x: hidden;">
     <div class="" style="display: flex;justify-content: center; margin-top: 4rem;margin-bottom: 2rem;">
         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/768px-HTML5_logo_and_wordmark.svg.png?20170517184425"
             width="240px" alt="">
@@ -38,14 +38,25 @@
         </li>
     </ol>
     <h1>History</h1>
-    <p>
-        The origins of the term <i> single-page application </i> are 
-        <span style="background-color: yellow;">unclear</span>, though the 
-        <strike> concep</strike>  concept was discussed at least as early as 2003. 
-        <a href=""> <sup>[3]</sup> Stuart (stunix) Morris </a> wrote the Self-Contained website at slashdotslash.com with the same goals and functions in April 2002 
-        <sup>[<a href="">4</a>]</sup> and later the same year, <i> Lucas Birdeau </i>, Kevin Hakman, Michael Peachey and Evan Yeh described a single page application implementation in the US patent 8,136,109. <sub>[5]</sub>
+    <p style="margin-bottom: 4rem;">
+        The origins of the term <i> single-page application </i> are
+        <span style="background-color: yellow;">unclear</span>, though the
+        <strike> concep</strike> concept was discussed at least as early as 2003.
+        <a href=""> <sup>[3]</sup> Stuart (stunix) Morris </a> wrote the Self-Contained website at slashdotslash.com
+        with the same goals and functions in April 2002
+        <sup>[<a href="">4</a>]</sup> and later the same year, <i> Lucas Birdeau </i>, Kevin Hakman, Michael Peachey and
+        Evan Yeh described a single page application implementation in the US patent 8,136,109. <sub>[5]</sub>
     </p>
+    <footer
+        style="position: fixed;bottom: 0;padding: 1rem;left: 0;width: 100dvw;background-color: #0d6efd;color: #fff;">
+        @Copyright Dedyas <span id="year"></span>
+    </footer>
 </body>
-</div>
+<script>
+    function getYear() {
+        return new Date().getFullYear()
+    }
+    document.getElementById("year").innerHTML = getYear()
+</script>
 
 </html>

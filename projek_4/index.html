@@ -52,7 +52,7 @@
                     <input type="radio" name="gender">Wanita
                 </td>
                 <td>
-                    
+
                 </td>
             </tr>
             <!-- Jenjang -->
@@ -85,16 +85,16 @@
                 </td>
             </tr>
             <!-- Alamat -->
-             <tr>
+            <tr>
                 <td>
                     Alamat
                 </td>
                 <td colspan="3">
                     <textarea rows="4" style="width: 100%;"></textarea>
                 </td>
-             </tr>
+            </tr>
             <!-- Button -->
-             <tr>
+            <tr>
                 <td>
 
                 </td>
@@ -107,9 +107,19 @@
                 <td>
 
                 </td>
-             </tr>
+            </tr>
         </table>
     </form>
+    <footer
+        style="position: fixed;bottom: 0;padding: 1rem;left: 0;width: 100dvw;background-color: #0d6efd;color: #fff;">
+        @Copyright Dedyas <span id="year"></span>
+    </footer>
 </body>
+<script>
+    function getYear() {
+        return new Date().getFullYear()
+    }
+    document.getElementById("year").innerHTML = getYear()
+</script>
 
 </html>
